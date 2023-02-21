@@ -1,0 +1,94 @@
+package Iframe;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Iframe1 
+{
+	public static void main(String[] args) throws InterruptedException
+	  {
+		//Step 1
+		
+		System.setProperty("Webdriver.chrome.driver", "F:\\SOFTWARE TESTING\\5. AUTOMATION\\Java\\chromedriver.exe\\");
+		
+		//step 2
+		
+	    WebDriver driver=new ChromeDriver();
+		
+	    //To enter URL
+	    driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst");
+		
+		//wait
+	    Thread.sleep(2000);
+	
+	    //we can pass 4 types of parameter in frame menthod(Framename,Frameid,webElement,Frameindex)
+	    //1- to switch to Iframe by Framename
+	    //driver.switchTo().frame("iframeResult");
+	    
+	  //2- to switch to Iframe by Frameid
+	    driver.switchTo().frame("iframeResult");
+	    
+	  //3- to switch to Iframe by webElement
+	    //driver.switchTo().frame("(//iframe[@frameborder='0'])[2]");
+	    
+	    //4- to switch to Iframe by Frameindex
+	  //  driver.switchTo().frame(0);
+	    
+	    //click me to display
+	    driver.findElement(By.xpath("//button[@type='button']")).click();
+	    
+	 
+	   
+	    
+	    
+	    
+	  }
+}
+package Iframe;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Iframe1 
+{
+	public static void main(String[] args) throws InterruptedException
+	  {
+		//Step 1
+		
+		System.setProperty("Webdriver.chrome.driver", "F:\\SOFTWARE TESTING\\5. AUTOMATION\\Java\\chromedriver.exe\\");
+		
+		//step 2
+		
+	    WebDriver driver=new ChromeDriver();
+		
+	    //To enter URL
+	    driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst");
+		
+		//wait
+	    Thread.sleep(2000);
+	
+	    //we can pass 4 types of parameter in frame menthod(Framename,Frameid,webElement,Frameindex)
+	    //1- to switch to Iframe by Framename
+	    //driver.switchTo().frame("iframeResult");
+	    
+	  //2- to switch to Iframe by Frameid
+	    driver.switchTo().frame("iframeResult");
+	    
+	  //3- to switch to Iframe by webElement
+	    //driver.switchTo().frame("(//iframe[@frameborder='0'])[2]");
+	    
+	    //4- to switch to Iframe by Frameindex
+	  //  driver.switchTo().frame(0);
+	    
+	    //click me to display
+	    driver.findElement(By.xpath("//button[@type='button']")).click();
+	    
+	 
+	   
+	    
+	    
+	    
+	  }
+}
